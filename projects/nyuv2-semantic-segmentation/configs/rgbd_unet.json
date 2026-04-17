@@ -1,0 +1,30 @@
+{
+  "experiment_name": "rgbd_unet_baseline",
+  "dataset": {
+    "data_dir": "data/raw/nyuv2",
+    "image_size": [320, 320],
+    "train_split": "train",
+    "valid_split": "valid",
+    "test_split": "test",
+    "num_classes": 41,
+    "ignore_index": 255
+  },
+  "model": {
+    "base_channels": 32,
+    "dropout": 0.1,
+    "use_depth": true
+  },
+  "training": {
+    "batch_size": 4,
+    "num_workers": 4,
+    "epochs": 20,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "seed": 42,
+    "amp": true,
+    "max_grad_norm": 1.0
+  },
+  "output": {
+    "root_dir": "outputs"
+  }
+}

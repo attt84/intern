@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360" fill="none">
+  <rect width="960" height="360" rx="24" fill="#0F172A"/>
+  <rect x="32" y="32" width="896" height="296" rx="20" fill="#111827" stroke="#334155"/>
+  <text x="64" y="82" fill="#F8FAFC" font-size="28" font-family="Segoe UI, Arial, sans-serif" font-weight="700">
+    NYUv2 semantic segmentation project
+  </text>
+  <text x="64" y="116" fill="#CBD5E1" font-size="16" font-family="Segoe UI, Arial, sans-serif">
+    Self-contained structure: data verification, training, evaluation, and prediction all live inside this folder.
+  </text>
+
+  <rect x="64" y="148" width="176" height="128" rx="16" fill="#1D4ED8"/>
+  <text x="84" y="188" fill="#EFF6FF" font-size="22" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Input</text>
+  <text x="84" y="218" fill="#DBEAFE" font-size="15" font-family="Segoe UI, Arial, sans-serif">RGB image</text>
+  <text x="84" y="242" fill="#DBEAFE" font-size="15" font-family="Segoe UI, Arial, sans-serif">Depth map</text>
+  <text x="84" y="266" fill="#DBEAFE" font-size="15" font-family="Segoe UI, Arial, sans-serif">Semantic label</text>
+
+  <rect x="280" y="148" width="184" height="128" rx="16" fill="#0F766E"/>
+  <text x="300" y="188" fill="#ECFEFF" font-size="22" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Code</text>
+  <text x="300" y="218" fill="#CCFBF1" font-size="15" font-family="Segoe UI, Arial, sans-serif">src/dataset.py</text>
+  <text x="300" y="242" fill="#CCFBF1" font-size="15" font-family="Segoe UI, Arial, sans-serif">src/transforms.py</text>
+  <text x="300" y="266" fill="#CCFBF1" font-size="15" font-family="Segoe UI, Arial, sans-serif">src/model.py</text>
+
+  <rect x="504" y="148" width="184" height="128" rx="16" fill="#7C3AED"/>
+  <text x="524" y="188" fill="#F5F3FF" font-size="22" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Runs</text>
+  <text x="524" y="218" fill="#EDE9FE" font-size="15" font-family="Segoe UI, Arial, sans-serif">scripts/train.py</text>
+  <text x="524" y="242" fill="#EDE9FE" font-size="15" font-family="Segoe UI, Arial, sans-serif">scripts/evaluate.py</text>
+  <text x="524" y="266" fill="#EDE9FE" font-size="15" font-family="Segoe UI, Arial, sans-serif">scripts/predict.py</text>
+
+  <rect x="728" y="148" width="168" height="128" rx="16" fill="#B45309"/>
+  <text x="748" y="188" fill="#FFFBEB" font-size="22" font-family="Segoe UI, Arial, sans-serif" font-weight="700">Outputs</text>
+  <text x="748" y="218" fill="#FEF3C7" font-size="15" font-family="Segoe UI, Arial, sans-serif">best.pt</text>
+  <text x="748" y="242" fill="#FEF3C7" font-size="15" font-family="Segoe UI, Arial, sans-serif">history.csv</text>
+  <text x="748" y="266" fill="#FEF3C7" font-size="15" font-family="Segoe UI, Arial, sans-serif">prediction panels</text>
+
+  <path d="M240 212H280" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M464 212H504" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M688 212H728" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+</svg>
