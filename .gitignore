@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Local experiment artifacts
+data/
+outputs/
+models/
+*.pth
+*.pt
+*.ckpt
+*.zip
+*.csv
+*.xlsx

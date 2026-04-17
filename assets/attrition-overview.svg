@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <rect width="900" height="260" fill="#f8fafc"/>
+  <text x="40" y="45" font-size="28" font-family="Segoe UI, Arial, sans-serif" fill="#1f2937">Attrition Analysis</text>
+  <text x="40" y="78" font-size="15" font-family="Segoe UI, Arial, sans-serif" fill="#4b5563">公開 HR データを使って離職率を分解し、対策の当たりを付ける構成</text>
+  <rect x="40" y="110" width="220" height="90" rx="14" fill="#dbeafe"/>
+  <text x="111" y="148" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#1e3a8a">Data</text>
+  <text x="76" y="176" font-size="14" font-family="Segoe UI, Arial, sans-serif" fill="#1e3a8a">HR attrition sample dataset</text>
+  <rect x="310" y="110" width="220" height="90" rx="14" fill="#dcfce7"/>
+  <text x="381" y="148" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#166534">View</text>
+  <text x="345" y="176" font-size="14" font-family="Segoe UI, Arial, sans-serif" fill="#166534">role / level / overtime / promotion</text>
+  <rect x="580" y="110" width="280" height="90" rx="14" fill="#fef3c7"/>
+  <text x="681" y="148" font-size="20" font-family="Segoe UI, Arial, sans-serif" fill="#92400e">Insight</text>
+  <text x="616" y="176" font-size="14" font-family="Segoe UI, Arial, sans-serif" fill="#92400e">離職率の偏りを特定し、優先順位を決める</text>
+  <path d="M260 155 H310" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+  <path d="M530 155 H580" stroke="#64748b" stroke-width="4" marker-end="url(#arrow)"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/>
+    </marker>
+  </defs>
+</svg>
