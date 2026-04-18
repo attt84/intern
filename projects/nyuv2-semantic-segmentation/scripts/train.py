@@ -6,7 +6,6 @@ from pathlib import Path
 
 import torch
 from torch import nn
-from torch.cuda.amp import GradScaler
 from torch.optim import AdamW
 from torch.optim.lr_scheduler import CosineAnnealingLR
 from torch.utils.data import DataLoader
@@ -136,7 +135,7 @@ def main() -> None:
     )
     scheduler = CosineAnnealingLR(optimizer, T_max=config.training.epochs)
     criterion = nn.CrossEntropyLoss(ignore_index=config.dataset.ignore_index)
-    scaler = GradScaler(enabled=config.training.amp and device.type == "cuda")
+    scaler = torch.amp.GradScaler("cuda", enabled=True) if config.training.amp and device.type == "cuda" else None
 
     experiment_dir = ensure_dir(config.experiment_dir())
     checkpoint_dir = ensure_dir(config.checkpoint_dir())

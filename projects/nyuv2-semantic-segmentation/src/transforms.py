@@ -10,14 +10,15 @@ from torchvision.transforms import ColorJitter, InterpolationMode
 
 
 def _to_image_tensor(image: np.ndarray) -> torch.Tensor:
-    return torch.from_numpy(np.ascontiguousarray(image)).permute(2, 0, 1).float().div(255.0)
+    writable = np.array(image, copy=True)
+    return torch.from_numpy(np.ascontiguousarray(writable)).permute(2, 0, 1).float().div(255.0)
 
 
 def _to_depth_tensor(depth: np.ndarray | None, height: int, width: int) -> torch.Tensor:
     if depth is None:
         depth_tensor = torch.zeros((1, height, width), dtype=torch.float32)
     else:
-        depth_array = np.ascontiguousarray(depth.astype(np.float32))
+        depth_array = np.array(depth, dtype=np.float32, copy=True)
         depth_tensor = torch.from_numpy(depth_array).unsqueeze(0)
         max_value = float(depth_tensor.max().item()) if depth_tensor.numel() > 0 else 0.0
         if max_value > 0:
@@ -28,7 +29,7 @@ def _to_depth_tensor(depth: np.ndarray | None, height: int, width: int) -> torch
 def _to_mask_tensor(mask: np.ndarray | None) -> torch.Tensor | None:
     if mask is None:
         return None
-    return torch.from_numpy(np.ascontiguousarray(mask.astype(np.int64)))
+    return torch.from_numpy(np.array(mask, dtype=np.int64, copy=True))
 
 
 class SegmentationTransform:
